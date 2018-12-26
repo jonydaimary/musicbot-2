@@ -191,7 +191,8 @@ client.on('message', async msg => {
 
 		if (!msg.member.voiceChannel) return msg.channel.send("You must be in my audio Room");
         if (!serverQueue) return msg.channel.send("There is no Queue to stop!!");
-        
+        if (!args[1]) return msg.channel.send(`The sound `);
+		
 		serverQueue.songs = [];
 		serverQueue.connection.dispatcher.end('The song was stopped and I came out of the acoustic rum');
         return undefined;
