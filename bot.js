@@ -102,7 +102,9 @@ client.on('message', async msg => {
 	if (command === `play`) {
 		const voiceChannel = msg.member.voiceChannel;
         
-        if (!voiceChannel) return msg.channel.send("انت لم تدخل روم صوتي");
+        if (!voiceChannel) return msg.channel.send("
+'ant lm tadkhul rum sawti
+20/5000You did not enter my voice");
         
         const permissions = voiceChannel.permissionsFor(msg.client.user);
         
